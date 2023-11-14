@@ -1,0 +1,86 @@
+/** Globales **/
+
+:root{
+    --fondo: #222222;
+    --texto: #547B8C;
+    --Primario:#FBFFDC;
+    --Secundario:#FFAC4F;
+
+    --fuentePrincipal:'Roboto Slab', sans-serif;
+    --fuenteSecundaria: 'Barriecito', cursive;   
+    }
+html {
+     box-sizing: border-box;
+     font-size: 62.5%;      
+ }    
+ *, *:before, *:after {
+    box-sizing: inherit;
+}
+.body-productos{
+    padding-top: 12%;
+    background-color: var(--Primario);
+    font-size: 2rem;
+    line-height: 1.5;
+    font-family: var(--fuentePrincipal);
+}
+a {
+    text-decoration: none;    
+}
+
+/** Estilos tarjetas **/
+
+.card-productos{      
+    margin: 10px 10px;
+    background-color: #FFFFFF;
+    box-shadow:0px 5px 15px 0px rgb(187, 184, 184);     
+}
+.card-productos .card-body{ 
+    text-align: center;
+    background-color: white;
+    padding-bottom: 8px;   
+    border-top: 1px solid rgb(232, 219, 219);
+}
+.card-productos:hover{          
+    box-shadow:0px 5px 15px 0px gray;
+}
+.card-productos small{
+    font-size: 1.5rem ;
+    color: #00a650;
+}
+.price{
+    font-size: 1.9rem;
+    margin-right: 3%;
+}
+.card-text svg{
+    color:#00a650
+}
+.card-text{
+    font-size: large;
+}
+
+/** Media Querys **/
+
+@media (max-width: 768px) { 
+      
+    .productos{
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 5%;
+    }          
+}
+
+@media (max-width: 400px) {
+   
+    .productos{
+        margin-top: 8%;
+    }           
+}
+
+
+
+
+
+
+
+
+
