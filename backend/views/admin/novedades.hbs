@@ -32,6 +32,7 @@
                     <th scope="col">#</th>
                     <th scope="col">Producto</th>
                     <th scope="col">Descripción</th>
+                    <th scope="col">Imagen</th>
                     <th scope="col">Precio</th>
                     <th class="text-end">Acciones</th>
                 </tr>
@@ -40,9 +41,10 @@
                 {{#each novedades}}
                 <tr>
                     <th scope="row">{{id}}</th>
-                    <td>{{nombre}}</td>
-                    <td>{{descripcion}}</td> 
-                    <td>{{precio}}</td>                       
+                    <td>{{Nombre}}</td>
+                    <td>{{Descripcion}}</td> 
+                    <td>{{{imagen}}}</td>
+                    <td>{{Precio}}</td>                       
                     <td class="text-end">
                         <a class="btn btn-secondary" href="/admin/novedades/modificar/{{id}}">
                             <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">

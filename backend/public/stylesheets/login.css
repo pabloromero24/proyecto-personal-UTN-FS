@@ -34,12 +34,6 @@ textarea{
     box-shadow: 0 0 6px 5px rgba(241, 239, 239, 0.8);
 }
 
-/* textarea{
-    font-size: 14px !important; 
-    background-color: rgb(82, 80, 80) !important;
-    box-shadow: 0 0 6px 5px rgba(241, 239, 239, 0.8);
-} */
-
 .btn{
     margin: 3rem 0 1rem 0;
     font-size: 15px;
