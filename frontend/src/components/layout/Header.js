@@ -21,14 +21,9 @@ const Header = (props) => {
                             <li className="nav-item">
                                <a className="nav-link active" aria-current="page" href="/Nosotros">Nosotros</a>
                             </li>
-                            <li className="nav-item dropdown">
-                               <a className="nav-link dropdown-toggle" href="/src/" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
-                                <ul className="dropdown-menu menu">
-                                  <li><a className="dropdown-item" href="/Skateboards">Skateboards</a></li>
-                                  <li><a className="dropdown-item" href="/Longboards">Longboards</a></li>
-                                  <li><a className="dropdown-item" href="/Indumentaria">Indumentaria</a></li>
-                                </ul>
-                            </li>
+                            <li className="nav-item">
+                               <a className="nav-link active" aria-current="page" href="/Productos">Productos</a>
+                            </li>                           
                             <li className="nav-item">
                                <a className="nav-link" href="/Contacto">Contacto</a>
                             </li>

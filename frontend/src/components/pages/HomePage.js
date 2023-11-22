@@ -1,6 +1,12 @@
 import "../../styles/components/pages/HomePage.css"
 
 const HomePage = () => {
+
+    // const navigateToProductos = (categoria) => {        
+    //     window.history.pushState(null, null, `/Productos?categoria=${categoria}`);        
+    //     handleCategoriaChange(categoria);        
+    // };
+
     return ( 
         <div>
             <section>
@@ -37,7 +43,7 @@ const HomePage = () => {
                         <p className="fw-semibold d-lg-block">Lorem ipsum, dolor sit amet consectetur
                         adipisicing elit. Placeat sapiente deleniti sint corrupti vero Lorem ipsum, dolor sit amet
                         consectetur</p>
-                        <p><a href="/Skateboards">Skateboards</a></p>
+                        <p><a href="/productos">Productos</a></p>
                     </div>
                     </div>
                     <div className="carousel-item">
@@ -69,13 +75,13 @@ const HomePage = () => {
                     </div>
                     <div className="col-4 text-center text-button">
                     <p>Skateboards</p>
-                    <a href="Skateboards"><button type="button" className="btn btn-secondary">VER MÁS</button></a>
+                    <a href="/productos"><button type="button" className="btn btn-secondary">VER MÁS</button></a>
                     </div>
                 </div>
                 <div className="row">
                     <div className="col-4 text-center text-button">
                     <p>Longboards</p>
-                    <a href="/Longboards"><button type="button" className="btn btn-secondary">VER MÁS</button></a>
+                    <a href="/productos"><button type="button" className="btn btn-secondary">VER MÁS</button></a>
                     </div>
                     <div className="img-container col-8 d-flex justify-content-between align-items-center">
                     <div className="image-overlay-2"></div>
@@ -89,7 +95,7 @@ const HomePage = () => {
                     </div>
                     <div className="col-4 text-center text-button">
                     <p>Indumentaria</p>
-                    <a href="/Indumentaria"><button type="button" className="btn btn-secondary">VER MÁS</button></a>
+                    <a href="/productos"><button type="button" className="btn btn-secondary">VER MÁS</button></a>
                     </div>
                 </div>
                 </div>

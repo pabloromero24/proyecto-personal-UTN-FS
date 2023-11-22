@@ -5,7 +5,10 @@ const cloudinary = require('cloudinary').v2;
 
 
 router.get('/novedades', async function (req, res, next) {
-    let novedades = await novedadesModel.getNovedades();
+    let categoria = req.query.categoria;
+    let novedades = await novedadesModel.getNovedades(categoria);
+
+    
 
     novedades = novedades.map(novedades => {
         if (novedades.img_id) {

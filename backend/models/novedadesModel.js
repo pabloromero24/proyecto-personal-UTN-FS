@@ -1,17 +1,28 @@
 var pool = require('./bd');
 
-async function getNovedades(){
-    var query = "select * from productos";
-    var rows = await pool.query(query);
-    return rows;
+async function getNovedades(categoria){
+
+    try {        
+        let query = "SELECT * FROM productos";        
+        if (categoria) {
+            query += ` WHERE Nombre = ?`;
+        }        
+        const rows = await pool.query(query, [categoria]);
+        return rows;
+    } catch (error) {        
+        console.error(error);
+        throw error;
+    }
+        
 }
 
 async function insertProducto(obj){
     try{
         var query = "insert into productos set ?";
-        var rows = await pool.query(query, [obj]);
+        var rows = await pool.query(query, [obj]);        
         return rows;
-    } catch (error) {
+        
+    } catch (error) {        
         console.log(error);
         throw error;
     }

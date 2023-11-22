@@ -1,6 +1,15 @@
+import React from 'react';
 import "../../styles/components/layout/Footer.css"
 
+
 const Footer = () => {
+
+//   const navigateToProductos = (categoria) => {    
+//     window.history.pushState(null, null, `/Productos?categoria=${categoria}`);   
+//     handleCategoriaChange(categoria);
+// };
+
+
     return ( 
     <footer>
       <div className="container text-center">
@@ -16,9 +25,9 @@ const Footer = () => {
           <div className="col">
             <p>Productos</p>
             <ul className="product">
-              <li><a href="/Skateboards">Skateboards</a></li>
-              <li><a href="/Longboards">Longboards</a></li>
-              <li><a href="/Indumentaria">Indumentaria</a></li>
+              <li><a href="/productos">Skateboards</a></li>
+              <li><a href="/productos">Longboards</a></li>
+              <li><a href="/productos">Remeras</a></li>
             </ul>
           </div>
           <div className="col social">          
