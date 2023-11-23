@@ -40,7 +40,7 @@ const ProductosPage = ({categoria, handleCategoriaChange }) => {
 
             <div className="productos row">
                 {loading ? (
-                    <p>Cargando Productos...</p>
+                    <h1 className='d-flex justify-content-center'>Cargando Productos...</h1>
                 ) : (
                     novedades.map(item => 
                         <NovedadItem
