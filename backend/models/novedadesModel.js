@@ -19,14 +19,15 @@ async function getNovedades(categoria){
 async function insertProducto(obj){
     try{
         var query = "insert into productos set ?";
-        var rows = await pool.query(query, [obj]);        
-        return rows;
+        var rows = await pool.query(query, [obj]);               
+        return rows;        
         
     } catch (error) {        
         console.log(error);
         throw error;
     }
 }
+
 
 async function deleteNovedadById(id){
     var query = "delete from productos where id = ?";
